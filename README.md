@@ -17,7 +17,7 @@ XSSor is a semi-automatic reflected and persistent XSS detector extension for Bu
 # User guide - how to use?
 
 1. After installation, the XSSor tab will be added to Burp.
-2. Open the configuration tab (XSSorà Configuration) and turn XSSor on.
+2. Open the configuration tab (XSSor > Configuration) and turn XSSor on.
 3. Browse to the tested website and write the XSS keyword (the default is `xssme` in the tested parameter).
 4. XSSor will send the same request (or multiple requests if in **brute force** mode) to the tested website with the defined payload (or multiple payloads in case of BT mode).
 5. XSSor will add a row for each payload, and the status; if it is vulnerable or not.
