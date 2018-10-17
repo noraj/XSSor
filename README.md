@@ -6,29 +6,29 @@ XSSor is a semi-automatic reflected and persistent XSS detector extension for Bu
  
 # Installation
 
-1.     Download Burp Suite (obviously): http://portswigger.net/burp/download.html
-2.     Download Jython Standalone JAR: http://www.jython.org/downloads.html
-3.     Open BurpàExtenderà Optionsà Python Environmentà Select Fileà Choose the Jython Standalone JAR
-4.     To install XSSor follow these steps:
-    1.     Download the XSSor.py file.
-    2.     Open Burp Extender Extensions and Choose XSSor.py file.
-    3.     See the XSSor tab and enjoy semi-automatic reflected and persistent XSS detection J
+1. Download Burp Suite (obviously): http://portswigger.net/burp/download.html
+2. Download Jython Standalone JAR: http://www.jython.org/downloads.html
+3. Open Burp Extender > Options > Python Environment > Select File > Choose the Jython Standalone JAR
+4. To install XSSor follow these steps:
+    1. Download the XSSor.py file.
+    2. Open Burp Extender > Extensions > Add > Choose XSSor.py file.
+    3. See the XSSor tab and enjoy semi-automatic reflected and persistent XSS detection J
  
 # User guide - how to use?
 
-1.     After installation, the XSSor tab will be added to Burp.
-2.     Open the configuration tab (XSSorà Configuration) and turn XSSor on.
-3.     Browse to the tested website and write the XSS keyword (the default is `xssme` in the tested parameter).
-4.     XSSor will send the same request (or multiple requests if in **brute force** mode) to the tested website with the defined payload (or multiple payloads in case of BT mode).
-5.     XSSor will add a row for each payload, and the status; if it is vulnerable or not.
+1. After installation, the XSSor tab will be added to Burp.
+2. Open the configuration tab (XSSorà Configuration) and turn XSSor on.
+3. Browse to the tested website and write the XSS keyword (the default is `xssme` in the tested parameter).
+4. XSSor will send the same request (or multiple requests if in **brute force** mode) to the tested website with the defined payload (or multiple payloads in case of BT mode).
+5. XSSor will add a row for each payload, and the status; if it is vulnerable or not.
  
 # Vulnerable status column
 
 There are 3 options:
 
-1.     N - Not vulnerable
-2.     Yes (Reflected XSS) - The malicious payload was found in the response of the tested page.
-3.     Yes (Persistent XSS) - The malicious payload was found in the response of one of the affected pages.
+1. N - Not vulnerable
+2. Yes (Reflected XSS) - The malicious payload was found in the response of the tested page.
+3. Yes (Persistent XSS) - The malicious payload was found in the response of one of the affected pages.
  
 # Affected pages
 
